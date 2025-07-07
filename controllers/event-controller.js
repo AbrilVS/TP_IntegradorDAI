@@ -1,7 +1,7 @@
 import {Router} from 'express';
-import ProvinceService from './../services/province-service.js'
+import ProvinceService from '../services/event-service.js'
 const router = Router();
-const svc    = new ProvinceService();	// Instanciación del Service.
+const svc    = new EventService();	// Instanciación del Service.
 
 router.get('', async (req, res) => {
   let respuesta;
